@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
-
+import LandingPage from './components/LandingPage/landingpage.js'
 class App extends React.Component {
     constructor(props){
       super(props);
@@ -38,7 +38,7 @@ const Container = (props) => (
       {props.children}
     </div>
   )
-const Home = () => <div><h1>We in here!</h1></div>
+const Home = () => <div><LandingPage /></div>
 const Account = () => <div><h1>This is Where Account info will be</h1></div>
 const Practice = () => <div><h1>This is Where You Practice</h1></div>
 const NewDeck = () => <div><h1>This is Where You Make A Deck</h1></div>
