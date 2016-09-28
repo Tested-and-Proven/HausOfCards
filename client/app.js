@@ -12,7 +12,9 @@ class App extends React.Component {
               <IndexRoute component={Home} />
               <Route path='/account' component={Account} />
               <Route path='/practice' component={Practice} />
-              <Route path='/make_deck' component={MakeDeck} />
+              <Route path='/new-deck' component={NewDeck} />
+              <Route path='/login' component={Login} />
+              <Route path='/register' component={Register} />
               <Route path='*' component={NotFound} />
             </Route>
           </Router>
@@ -25,7 +27,9 @@ const Nav = () => (
       <Link to='/'> Home </Link>&nbsp;
       <Link activeStyle={{color:'#53acff'}} to='/account'>Account</Link>&nbsp;
       <Link activeStyle={{color:'#53acff'}} to='/practice'>Practice</Link>&nbsp;
-      <Link activeStyle={{color:'#53acff'}} to='/make_deck'>Make A Deck</Link>
+      <Link activeStyle={{color:'#53acff'}} to='/new-deck'>New Deck</Link>&nbsp;
+      <Link activeStyle={{color:'#53acff'}} to='/login'>Login</Link>&nbsp;
+      <Link activeStyle={{color:'#53acff'}} to='/register'>Register</Link>&nbsp;
     </div>
   )
 const Container = (props) => (
@@ -37,7 +41,9 @@ const Container = (props) => (
 const Home = () => <div><h1>We in here!</h1></div>
 const Account = () => <div><h1>This is Where Account info will be</h1></div>
 const Practice = () => <div><h1>This is Where You Practice</h1></div>
-const MakeDeck = () => <div><h1>This is Where You Make A Deck</h1></div>
+const NewDeck = () => <div><h1>This is Where You Make A Deck</h1></div>
+const Login = () => <div><h1>This is Where Login</h1></div>
+const Register = () => <div><h1>This is Where You Register</h1></div>
 const NotFound = () => <h1> This Page Aint Here Homey!</h1>
 
 export default App;
